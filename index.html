@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		Сайт
+	</title>
+</head>
+<body>
+
+
+<div style="position: relative; background-color: #800000; width: 100%; height: 100%; top: -30px;">
+	<h1 style="position: relative; left: 10%; top: 25px; color: white;"><i>Блакитна Лагунія</i></h1> 
+	<ul>
+		<button style="position: relative; width: 7%; height: 80%; left: 65%; top: -25px; background-color: #FFA07A;"><a href="index.html">Головна</a></button>
+		<button style="position: relative; width: 7%; height: 80%; left: 65%; top: -25px; background-color: #FFA07A;"><a href="about.html">Про нас</a></button>
+		<button style="position: relative; width: 7%; height: 80%; left: 65%; top: -25px; background-color: #FFA07A;"><a href="contacts.html">Контакти</a></button>
+
+    <style>
+        .register-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            position: relative;
+            left: 66%;
+            top: -25px;
+        }
+
+        .register-button:hover {
+            background-color: #45a049;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 60%;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" class="register-button" id="registerButton">Зареєструватись</a>
+
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Форма реєстрації</h2>
+            <form>
+                <input type="text" placeholder="Ім'я" required>
+                <input type="email" placeholder="Електронна пошта" required>
+                <input type="password" placeholder="Пароль" required>
+                <button type="submit">Зареєструватись</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const registerButton = document.getElementById('registerButton');
+        const modal = document.getElementById('registerModal');
+
+        registerButton.addEventListener('click', function(event) {
+            event.preventDefault();
+            modal.style.display = 'block';
+        });
+
+        function closeModal() {
+            modal.style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+	</ul>
+</div>
+
+	<div>
+		<p style="position: relative; left: 10%; width: 80%; text-align: center;"><big><big>Вітаємо у "Блакитній Лагуні" - турагентстві, яке допоможе зануритися у світ незабутнього відпочинку біля моря. Ми - експерти з підбору ідеальних морських курортів, де можна повністю розслабитися під шум хвиль та насолодитися сонцем і піщаними пляжами. Чи мрієте ви про романтичну відпустку в затишному куточку, сімейний відпочинок з розвагами для дітей чи активний вояж з дайвінгом та водними видами спорту - ми знайдемо для вас ідеальне місце. Довірте організацію своєї подорожі професіоналам і відчуйте всю красу та комфорт відпочинку на морському узбережжі. У "Блакитній Лагуні" ми піклуємося про кожну деталь вашої мандрівки, щоб ви могли цілковито зануритися в атмосферу безтурботності та насолоди.</big></big></p>
+	</div>
+
+	<div>
+		<hr>
+		<ul>
+			<p style="position: relative; left: 14%; width: 93%;"><big><big><big>Меню швидкого доступу:</big></big></big></p>
+			<button style="position: relative; left: 10%; width: 7%; height: 40%; background-color: #FFA07A;"><a href="#html">Греція</a></button>
+			<button style="position: relative; left: 10%; width: 7%; height: 40%; background-color: #FFA07A;"><a href="#CSS">Іспанія</a></button>
+			<button style="position: relative; left: 10%; width: 7%; height: 40%; background-color: #FFA07A;"><a href="#JS">Туніс</a></button>
+			<button style="position: relative; left: 10%; width: 7%; height: 40%; background-color: #FFA07A;"><a href="#Angular">Египет</a></button>
+			<button style="position: relative; left: 10%; width: 7%; height: 40%; background-color: #FFA07A;"><a href="#Google">Філіпіни</a></button>
+			<button style="position: relative; left: 10%; width: 7%; height: 40%; background-color: #FFA07A;"><a href="#Apple">Таїланд</a></button>
+		</ul>
+	</div>
+
+
+	<section id="html">
+	<div>
+		<hr>
+		<i><h3 style="position: relative;text-align: center;"><big><big><big>Греція</big></big></big></h3></i>
+		<p style="position: relative; left: 10%; width: 80%; text-align: center;"><big><big>Греція - казковий куточок Середземномор'я, де історія зливається з сучасністю, а прекрасні пляжі з лазурними водами чергуються з величними пам'ятками старовини. Відчуйте атмосферу безтурботного життя на островах Крит, Родос чи Корфу з їхніми піщаними узбережжями та традиційною грецькою кухнею. Або вирушіть на материкову частину відкрити для себе вічну красу Акрополя в Афінах та середньовічні фортеці Родоса. У Греції кожен знайде свій ідеальний відпочинок - від пляжного релаксу до культурного туризму та активних розваг. Зануртеся у світ грецької гостинності та насолодіться смачними стравами, запашним вином та теплим сонцем в оточенні чарівних пейзажів</big></big></p>
+	<br><br>
+
+<img style="position: relative; width: 400px; height: 250px; left: 37%;" src="img1/gr2.png">
+
+		<hr>
+		</div>
+
+	</section>
+	<section id="CSS">
+	<div>
+		<i><h3 style="position: relative;text-align: center;"><big><big><big>Іспанія</big></big></big></h3></i>
+		<p style="position: relative; left: 10%; width: 80%; text-align: center;"><big><big>Іспанія - квінтесенція пристрасті, історії та унікальної культури! Насолодіться яскравими фарбами цієї країни контрастів: від гарячих піщаних пляжів Коста-дель-Соль до снігових вершин Піренеїв. Вражаючі пам'ятки, такі як Альгамбра в Гранаді та Саграда Фамілія в Барселоні, перенесуть вас у світ архітектурних шедеврів. А вулички Севільї та Мадрида закружлять у вирі фламенко та тапас. Ідилічні середземноморські курорти на островах Мальорка та Ібіца чекають, щоб зануритися у безтурботний відпочинок на пляжі з коктейлем в руці. Куштуйте делікатеси іспанської кухні, насолоджуйтесь життєрадісною атмосферою і яскравим нічним життям.</big></big></p>
+	<br><br>
+
+<img style="position: relative; width: 400px; height: 250px; left: 37%;" src="img1/is3.png">
+
+		<hr>
+		</div>
+		
+	</section>
+	<section id="JS">
+		<div>
+		<i><h3 style="position: relative;text-align: center;"><big><big><big>Туніс</big></big></big></h3></i>
+		<p style="position: relative; left: 10%; width: 80%; text-align: center;"><big><big>Туніс - екзотична перлина Північної Африки, де арабські традиції зливаються з колоритом Середземномор'я. Відкрийте для себе білосніжні піщані пляжі та лазурні лагуни райських курортів на узбережжі, таких як Суса, Хаммамет та Джерба. Пориньте у вир старовинних міст-музеїв, прогулюючись вузенькими вуличками медини Тунісу. Завітайте в Ель-Джем, щоб на власні очі побачити одну з найкраще збережених римських арен у світі. А потім насолодіться смаком справжнього тунісця - поєднання пікантних спецій та свіжих фруктів моря. У Тунісі історія оживає на кожному кроці, а гостинність місцевих мешканців зігріє ваше серце.</big></big></p>
+	
+	<br><br>
+
+<img style="position: relative; width: 400px; height: 250px; left: 37%;" src="img1/tu1.png">
+		<hr>
+		</div>
+
+	</section>	
+	<section id="Angular">
+		<div>
+		<i><h3 style="position: relative;text-align: center;"><big><big><big>Египет</big></big></big></h3></i>
+		<p style="position: relative; left: 10%; width: 80%; text-align: center;"><big><big>Єгипет - древня колиска цивілізації, де час ніби зупинився. Зануртеся у світ фараонів та піramід на березі життєдайного Нілу. Курорти Хургади та Шарм-ель-Шейху відкриють для вас підводний рай Червоного моря з його коралами та екзотичними рибами. Прогулянка вічним Каїром приведе вас до грандіозних пірамід Гізи та загадкового Сфінкса. А в Луксорі ви зможете на власні очі побачити вічні гробниці та храми фараонів. Для пристрасних шанувальників пляжного відпочинку - ідилічні піщані узбережжя та розкішні готелі Єгипту стануть раєм. Скуштуйте пікантних східних наїдків, помилуйтеся заходом сонця в пустелі та від'ізними шоу - Єгипет подарує незабутні враження.</big></big></p>
+
+	<br><br>
+
+<img style="position: relative; width: 400px; height: 250px; left: 37%;" src="img1/eg2.png">
+		<hr>
+		</div>
+		
+	</section>
+	<section id="Google">
+		<div>
+		<i><h3 style="position: relative;text-align: center;"><big><big><big>Філіпіни</big></big></big></h3></i>
+		<p style="position: relative; left: 10%; width: 80%; text-align: center;"><big><big>Філіппіни - тропічний рай з більш ніж 7000 островів, розкиданих у блакитних водах Тихого океану. Тут вас чекають безкрайні білосніжні пляжі, лагуни з кришталевою водою та мальовничі схили вулканів, покриті пишною зеленню. Відкрийте для себе дайвінг на одному з найкращих коралових рифів світу на острові Палаван. Або помилуйтеся підводними пейзажами Туббатаха, внесеного до Світової спадщини ЮНЕСКО. Столиця Манілла вразить поєднанням історичних пам'яток та сучасних хмарочосів. А острів Боракай запам'ятається вам атмосферою справжнього безтурботного раю. Філіппінці - одні з найгостинніших людей світу, які зустрінуть вас широкими усмішками.</big></big></p>
+
+	<br><br>
+
+<img style="position: relative; width: 400px; height: 250px; left: 37%;" src="img1/fi1.png">
+		<hr>
+		</div>
+			
+	</section>
+	<section id="Apple">
+		<div>
+		<i><h3 style="position: relative;text-align: center;"><big><big><big>Таїланд</big></big></big></h3></i>
+		<p style="position: relative; left: 10%; width: 80%; text-align: center;"><big><big>Таїланд - сяюча перлина Південно-Східної Азії, де старовинні храми сусідять з піщаними пляжами та сучасними мегаполісами. Відкрийте для себе чарівний Бангкок з його яскравими вуличками, гамірними ринками і грандіозним Великим Палацом. Насолодіться безтурботним релаксом на курортах Пхукета, Самуї або Пхангана з їхніми розкішними пляжами та лазурними затоками. Зануртеся в підводний світ, багатий на кольорові рифи та екзотичних мешканців. Доторкніться до самобутньої культури Таїланду в древніх буддійських монастирях чи на святах, сповнених яскравих вбрань і барвистих парад. Куштуйте ніжні смаки місцевої кухні з її гармонійним поєднанням спецій. У Таїланді на вас чекають пригоди та екзотика на тлі щирої гостинності місцевих жителів.</big></big></p>
+
+	<br><br>
+
+<img style="position: relative; width: 400px; height: 250px; left: 37%;" src="img1/ta1.jpg">
+		</div>
+		<hr>
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+			
+
+<div style="position: relative; background-color: #800000; width: 100%; height: 100%; top: 35px; ">
+	<a style="position: relative; left: 40%; height: 22%; color: white;"><big><big><big><big><big>&copy; BlakytnaLagunya</a></big></big></big></big></big></a>
+</div>
+
+
+</body>
+</html>

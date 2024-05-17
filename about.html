@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		Сайт
+	</title>
+</head>
+<body>
+
+
+<div style="position: relative; background-color: #800000; width: 100%; height: 100%; top: -30px;">
+	<h1 style="position: relative; text-align; left: 10%; top: 25px; color: white;"><i>Блакитна Лагунія</i></h1> 
+	<ul>
+		<button style="position: relative; width: 7%; height: 80%; left: 65%; top: -25px; background-color: #FFA07A;"><a href="index.html">Головна</a></button>
+		<button style="position: relative; width: 7%; height: 80%; left: 65%; top: -25px; background-color: #FFA07A;"><a href="about.html">Про нас</a></button>
+		<button style="position: relative; width: 7%; height: 80%; left: 65%; top: -25px; background-color: #FFA07A;"><a href="contacts.html">Контакти</a></button>
+
+    <style>
+        .register-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            position: relative;
+            left: 66%;
+            top: -25px;
+        }
+
+        .register-button:hover {
+            background-color: #45a049;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 60%;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" class="register-button" id="registerButton">Зареєструватись</a>
+
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Форма реєстрації</h2>
+            <form>
+                <!-- Поля форми реєстрації -->
+                <input type="text" placeholder="Ім'я" required>
+                <input type="email" placeholder="Електронна пошта" required>
+                <input type="password" placeholder="Пароль" required>
+                <button type="submit">Зареєструватись</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const registerButton = document.getElementById('registerButton');
+        const modal = document.getElementById('registerModal');
+
+        registerButton.addEventListener('click', function(event) {
+            event.preventDefault();
+            modal.style.display = 'block';
+        });
+
+        function closeModal() {
+            modal.style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+	</ul>
+</div>
+
+	<p style="position: relative;left: 10%;width: 70%;"><big><big>"Блакитна Лагуна" - це турагентство, створене людьми, які живуть і дихають мандрами. Ми щиро віримо, що подорожі - це найкращий спосіб відкрити для себе нові світи, пізнати унікальні культури та насолодитися розмаїттям природних краєвидів нашої прекрасної планети. Наша команда складається з досвідчених професіоналів, які самі є завзятими мандрівниками, тож ми добре розуміємо потреби та побажання наших клієнтів.<br><br>У "Блакитній Лагуні" ми прагнемо зробити кожну подорож неповторною та незабутньою. Ми ретельно підбираємо найкращі готелі, екскурсії та розваги, щоб забезпечити вам максимальний комфорт і задоволення від відпочинку. Наші досвідчені менеджери завжди готові запропонувати індивідуальні рішення, враховуючи ваші смаки, бюджет і побажання.<br><br>Чи прагнете ви романтичного куточка на пляжі, активних пригод чи культурного збагачення - ми підберемо ідеальний маршрут саме для вас. Довіртеся нашій турботі та професіоналізму, і ми відкриємо для вас усю красу та різноманітність світу.</big></big></p>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+
+
+
+<div style="position: relative; background-color: #800000; width: 100%; height: 100%; top: 35px; ">
+	<a style="position: relative; left: 40%; height: 22%; color: white;"><big><big><big><big><big>&copy; BlakytnaLagunya</a></big></big></big></big></big></a>
+</div>
+
+</body>
+</html>
